@@ -1,0 +1,7 @@
+/home/orzel/jjdd4_JavaEE_UsersEngine/src/main/java/com/isa/usersengine/Main.java
+/home/orzel/jjdd4_JavaEE_UsersEngine/src/main/java/com/isa/usersengine/dao/UsersRepositoryDaoBean.java
+/home/orzel/jjdd4_JavaEE_UsersEngine/src/main/java/com/isa/usersengine/repository/UsersRepository.java
+/home/orzel/jjdd4_JavaEE_UsersEngine/src/main/java/com/isa/usersengine/servlets/WelcomeServlet.java
+/home/orzel/jjdd4_JavaEE_UsersEngine/src/main/java/com/isa/usersengine/domain/User.java
+/home/orzel/jjdd4_JavaEE_UsersEngine/src/main/java/com/isa/usersengine/dao/UsersRepositoryDao.java
+/home/orzel/jjdd4_JavaEE_UsersEngine/src/main/java/com/isa/usersengine/servlets/HelloServlet.java
