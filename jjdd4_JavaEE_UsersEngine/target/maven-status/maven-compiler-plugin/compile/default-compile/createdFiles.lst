@@ -4,4 +4,5 @@ com/isa/usersengine/servlets/HelloServlet.class
 com/isa/usersengine/dao/UsersRepositoryDaoBean.class
 com/isa/usersengine/domain/User.class
 com/isa/usersengine/servlets/WelcomeServlet.class
+com/isa/usersengine/servlets/FindUserByIdServlet.class
 com/isa/usersengine/repository/UsersRepository.class
