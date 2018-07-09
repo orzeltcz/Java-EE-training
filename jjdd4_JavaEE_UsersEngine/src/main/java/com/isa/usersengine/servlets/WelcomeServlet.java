@@ -18,7 +18,7 @@ public class WelcomeServlet extends HttpServlet {
        String name = request.getParameter("imie");
         PrintWriter pr = response.getWriter();
         pr.println("<html><head><body><h2>Witaj:");
-        if(name!="" && name!=null) pr.println(name);
+        if(name!="" || name!=null) pr.println(name);
         else pr.println(response.SC_BAD_REQUEST);
         pr.println("</h2></body></head></html>");
         pr.close();
