@@ -14,16 +14,18 @@
     <#assign color="green">
     <#elseif user.age gt 40>
     <#assign color="red">
-
+    </#if>
+    <div style="color: ${color}">
         Imie: ${user.name}<br/>
         Login: ${user.login}<br/>
         Wiek: ${user.age}<br/>
         Plec: ${user.gender}<br/>
     <#-- to jest tajemniczy komentarz-->
-    </#if>
+    </div>
     <#sep>--------------------------------------</#sep><br/>
     </#items>
 <ul>
 </#list>
+<#include "footer.ftlh">
 </body>
 </html>

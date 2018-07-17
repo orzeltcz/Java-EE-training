@@ -6,19 +6,26 @@
 <body>
 
 <#list users>
+<ul>
     <#items as user>
-    <#if user.age < 20> <h1 style="color:blue;">
-    <#elseif user.age gt 20 && user.age lt 40> <h1 style="color:green;">
-    <#else> <h1 style="color:red;">
+    <#if user.age lt 20>
+    <#assign color="blue">
+    <#elseif user.age gt 20 && user.age lt 40>
+    <#assign color="green">
+    <#elseif user.age gt 40>
+    <#assign color="red">
+    </#if>
+    <div style="color: ${color}">
         Imie: ${user.name}<br/>
         Login: ${user.login}<br/>
         Wiek: ${user.age}<br/>
         Plec: ${user.gender}<br/>
     <#-- to jest tajemniczy komentarz-->
-    </#if>
+    </div>
     <#sep>--------------------------------------</#sep><br/>
     </#items>
-<h1>
+<ul>
 </#list>
+<#include "footer.ftlh">
 </body>
 </html>

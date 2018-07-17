@@ -22,7 +22,7 @@ public class UsersRepository {
         user1.setId(1);
         user1.setName("Jan");
         user1.setLogin("janko");
-        user1.setAge(21);
+        user1.setAge(11);
         user1.setGender(Gender.MAN);
         usersRepository.add(user1);
 
@@ -30,7 +30,7 @@ public class UsersRepository {
         user2.setId(2);
         user2.setName("Adam");
         user2.setLogin("ano");
-        user2.setAge(20);
+        user2.setAge(45);
         user2.setGender(Gender.MAN);
         usersRepository.add(user2);
 
@@ -38,7 +38,7 @@ public class UsersRepository {
         user3.setId(3);
         user3.setName("Anna");
         user3.setLogin("anmi");
-        user3.setAge(20);
+        user3.setAge(21);
         user3.setGender(Gender.WOMAN);
         usersRepository.add(user3);
     }

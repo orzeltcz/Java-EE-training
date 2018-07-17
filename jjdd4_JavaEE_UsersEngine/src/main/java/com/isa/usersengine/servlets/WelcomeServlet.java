@@ -25,6 +25,7 @@ public class WelcomeServlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
        String name = request.getParameter("imie");
+       String salary = request.getAttribute("filteredSalary").toString();
         PrintWriter pr = response.getWriter();
         if(name=="" || name==null) {
             response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
@@ -33,6 +34,7 @@ public class WelcomeServlet extends HttpServlet {
         Template template = conf.getTemplate("welcome-user.ftlh",getServletContext());
         Map<String,Object> model = new HashMap<>();
         model.put("name",name);
+        model.put("salary",salary);
         try {
             template.process(model,pr);
         } catch (TemplateException e) {
