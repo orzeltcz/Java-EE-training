@@ -1,6 +1,10 @@
 package com.isa.usersengine.domain;
 
+import com.google.common.hash.Hashing;
 import lombok.Data;
+
+import java.nio.charset.StandardCharsets;
+
 @Data
 public class User {
     private int id;
@@ -40,7 +44,7 @@ public class User {
     }
 
     public void setPassword(String password) {
-        this.password = password;
+        this.password = hashPass(password);
     }
 
     public int getAge() {
@@ -65,5 +69,12 @@ public class User {
 
     public void setImageUrl(String imageUrl) {
         this.imageUrl = imageUrl;
+    }
+
+    private String hashPass(String password){
+
+         return Hashing.sha256()
+                .hashString(password, StandardCharsets.UTF_8)
+                .toString();
     }
 }

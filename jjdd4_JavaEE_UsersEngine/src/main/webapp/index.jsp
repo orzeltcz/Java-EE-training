@@ -1,7 +1,7 @@
 <html>
 <body>
 <h2>Hello World!</h2>
-<form action="/welcome-user" method="get">
+<form action="/welcome-user" method="put">
     <input type="text" name="imie" placeholder="Podaj imie">
     <input type="text" name="salary" placeholder="Podaj salary">
 
