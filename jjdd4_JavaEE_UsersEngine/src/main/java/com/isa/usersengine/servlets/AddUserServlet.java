@@ -56,11 +56,11 @@ public class AddUserServlet extends HttpServlet {
         } catch (UserImageNotFound userImageNotFound) {
             userImageNotFound.printStackTrace();
         }
-        usersRepositoryDao.addUser(user);
         if(!isParamValid(name,login,password,age)){
             response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
         return;
         }
+        usersRepositoryDao.addUser(user);
         response.sendRedirect("/allUsers");
         }
 
