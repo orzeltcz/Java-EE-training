@@ -4,14 +4,15 @@ import com.google.common.hash.Hashing;
 import lombok.Data;
 
 import java.nio.charset.StandardCharsets;
+import java.util.Optional;
 
 @Data
 public class User {
-    private int id;
+    private Integer id;
     private String name;
     private String login;
     private String password;
-    private int age;
+    private Integer age;
     private Gender gender;
     private String imageUrl;
 
@@ -19,7 +20,7 @@ public class User {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 

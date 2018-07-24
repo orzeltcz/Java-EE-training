@@ -2,7 +2,7 @@
 <body>
 <h2>Hello World!</h2>
 <h3>${method}</h3>
-<form action="/user" method="${method}" enctype="multipart/form-data">
+<form action="/user" method="post" enctype="multipart/form-data">
     <#if method=="post">
     Name: <input type="text" name="name"/><br/><br/>
     Login: <input type="text" name="login"/><br/><br/>
